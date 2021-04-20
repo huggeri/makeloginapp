@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транслитерация</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="one-field">
+            <span class="field-name">ФИО</span>
+            <input type="text" class="field" id="user-fio">
+        </div>
+
+        <div class="one-field">
+            <button class="trans-button" type="submit" id="trans-button" name="trans-button">Получить логин</button>
+        </div>
+
+        <div class="one-field">
+            <span class="field-name">Результат</span>
+            <input type="text" class="field" id="trans-result">
+        </div>
+
+        <div class="one-field">
+            <button class="bttn" type="button" id="settings-button">Изменить настройки</button>
+        </div>
+
+        <div class="settings-container" id="settings-container" style="display: none;">
+            <div class="one-field">
+                <button class="bttn" type="button" id="setrules-button">Задать правила</button>
+            </div>
+			
+			<div class="setrules-container" id="setrules-container" style="display: none;">
+				<div class="checkbox-settings">
+					<div class="radio-container">
+						<label class="radio-label" for="first-translation">Сначала<br>транслитерация</label>
+						<input class="radio-input" type="radio" id="first-translation" name="radioch">
+					</div>
+					<div class="radio-container">
+						<label class="radio-label" for="first-reduction">Сначала<br>сокращение</label>
+						<input class="radio-input" type="radio" id="first-reduction" name="radioch">
+					</div>
+				</div>
+				
+				<div class="checkbox-container">
+					<label for="only-one" id="checkbox-label">Только транслитерация</label>
+					<input type="checkbox" id="checkbox-only" name="checkb">
+				</div>
+			</div>
+            
+            <div class="one-field">
+                <button class="bttn" type="button" id="setvalues-button">Задать значения букв</button>
+            </div>
+
+			<div class="table-container" id="table-container" style="display: none;">
+			</div>
+			
+			<button class="save-bttn" type="submit" id="save-values">Сохранить изменения</button>
+		</div>
+	</div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
