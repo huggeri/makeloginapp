@@ -1,2 +1,2 @@
 # makeloginapp
-GH extension for making login-string with flexible setings
+GH extension for making login-string with flexible settings
